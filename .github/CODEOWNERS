@@ -1,0 +1,16 @@
+# CODEOWNERS — enforce the frontend/backend boundary of this repo.
+# Enable branch protection with "Require review from Code Owners" to make this binding.
+# Owner of this repo (@VexBane777) must review ANY change to backend wiring paths.
+
+# Backend wiring — off limits to UI developers:
+/lib/services/      @VexBane777
+/lib/providers/     @VexBane777
+/lib/models/        @VexBane777
+/lib/utils/         @VexBane777
+/lib/main.dart      @VexBane777
+/android/           @VexBane777
+/pubspec.yaml       @VexBane777
+/pubspec.lock       @VexBane777
+
+# UI surface — free for frontend developers (no owner review required):
+# (everything not matched above, i.e. lib/screens/, lib/widgets/, lib/app.dart, assets/, test/)
